@@ -6,6 +6,7 @@ import { Choice } from './components/choice/Choice'
 import { pickList, cpuRandomPick, getWinner } from './game/logic';
 import { Pick } from './components/pick/Pick'
 import './components/pick/Pick.css'
+import { Users } from './components/users/users';
 
 
 function App() {
@@ -54,7 +55,7 @@ function App() {
           <Pick text={'Cpu pick'} playerChoice={cpuChoice} />
         </div>
       </div>
-
+      <Users />
     </div>
   );
 }
