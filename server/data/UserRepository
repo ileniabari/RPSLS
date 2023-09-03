@@ -1,0 +1,34 @@
+const users = [
+    {
+        id: '1',
+        name: 'ilenia',
+        email: 'ileniabari'
+    },
+    {
+        id: '2',
+        name: 'andrea',
+        email: 'andrealiut'
+    }
+]
+
+module.exports = {
+    getUsers: function () {
+        return users
+    },
+    getUserById: function (idInput) {
+        const user = users.find((user) => user.id === idInput)
+        return user
+    },
+    createUsers: function (user) {
+        users.push(user)
+    },
+    updateUser: function (user) {
+        const existingUserId = users.findIndex((u) => u.id === user.id)
+        if (!existingUser) {
+            throw 'users_not_found'
+        }
+        users[existingUserId] = user;
+    }
+}
+
+module.exports = UserRepository
