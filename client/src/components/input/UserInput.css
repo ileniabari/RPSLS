@@ -1,0 +1,12 @@
+.inputLabel{
+    font-size: 200px;
+}
+
+.input-Box{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    height: 100px;
+    width: 300px;
+    display: block;
+}

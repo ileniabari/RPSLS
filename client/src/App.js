@@ -7,6 +7,8 @@ import { pickList, cpuRandomPick, getWinner } from './game/logic';
 import { Pick } from './components/pick/Pick'
 import './components/pick/Pick.css'
 import { Users } from './components/users/users';
+import { userInput } from './components/input/UserInput';
+import './components/input/UserInput.css'
 
 
 function App() {
@@ -36,6 +38,7 @@ function App() {
   return (
     <div>
       <Header />
+      <userInput className='input-Box'/>
       <Score text={text} count={count} />
       <Score text={text2} count={cpuCount} />
       <div className='choice-box'>
